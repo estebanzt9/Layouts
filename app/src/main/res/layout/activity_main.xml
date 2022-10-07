@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carrouno"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Texto_1"
+        android:layout_width="411dp"
+        android:layout_height="143dp"
+
+        android:gravity="center"
+        android:text="CARROS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FF3B3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf=" parent
+"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <TableLayout
+        android:layout_width="408dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="120dp">
+
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" /><![CDATA[
+
+
+
+            android:text="Button" />
+        ]]>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/Boton_inicio"
+        android:layout_width="99dp"
+        android:layout_height="132dp"
+        android:backgroundTint="#F40303"
+        android:text="HOME"
+        app:iconTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934"
+        app:rippleColor="#03A9F4" />
+
+    <Button
+        android:id="@+id/Boton_cambio"
+        android:layout_width="94dp"
+        android:layout_height="136dp"
+
+        android:backgroundTint="#F40303"
+        android:onClick="segunda_pantalla"
+        android:text="NEXT"
+        app:iconTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        app:rippleColor="#F40303" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
